@@ -46,14 +46,14 @@ namespace ConsoleScraper
 
         private static void GetDataOnline()
         {
-            // Console.WriteLine("Enter URL:");
-            // var html = @"" + Console.ReadLine();
-            // HtmlWeb web = new HtmlWeb();
-            // var doc = web.Load(html);
+            Console.WriteLine("Enter URL:");
+            var html = @"" + Console.ReadLine();
+            HtmlWeb web = new HtmlWeb();
+            var doc = web.Load(html);
 
-            var path = @"C:\Users\muham\Downloads\auction.html";
-            var doc = new HtmlAgilityPack.HtmlDocument();
-            doc.Load(path);
+            //var path = @"C:\Users\muham\Downloads\auction.html";
+            //var doc = new HtmlAgilityPack.HtmlDocument();
+            //doc.Load(path);
 
             var raw = doc.Text;
             raw = raw.Substring(raw.IndexOf("asset_list_content"));
